@@ -1,0 +1,14 @@
+# k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: wisecow-svc
+  namespace: wisecow
+spec:
+  type: ClusterIP
+  selector:
+    app: wisecow
+  ports:
+    - port: 4499
+      targetPort: 4499
+      protocol: TCP
