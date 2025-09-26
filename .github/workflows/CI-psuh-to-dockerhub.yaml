@@ -7,8 +7,9 @@ on:
 
 jobs:
   push-to-dockerhub:
-  builds-on: ubuntu-latest
-  steps:
+    builds-on: ubuntu-latest
+    
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
